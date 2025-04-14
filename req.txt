@@ -1,0 +1,7 @@
+pandas
+numpy
+matplotlib
+seaborn
+fsspec
+huggingface_hub
+datasets
