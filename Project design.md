@@ -15,7 +15,7 @@ It includes the following fields: `title`, `text`, `subject`, `date`, and `label
 - Merging the `title` and `text` fields to form the input text
 
 ## 3. Classification Models
-We will fine-tune a transformer-based model for binary classification (`fake` vs `real`). In particular, we will use **BERT** as the base model for transfer learning.
+We will fine-tune a transformer-based model for binary classification (`fake` (0) vs `real` (1)). In particular, we will use **BERT** as the base model for transfer learning.
 
 ## 4. Evaluation
 Model performance will be assessed using a standard train-test split. The following evaluation metrics will be considered:
