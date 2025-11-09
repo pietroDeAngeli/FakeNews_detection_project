@@ -1,12 +1,12 @@
-# 📰 Fake News Detection with NLP and Neural Networks
+# Fake News Detection with NLP and Neural Networks
 
-This project explores two distinct approaches to detecting fake news articles using **Natural Language Processing** and **supervised machine learning** techniques. The models were developed and evaluated as part of a university project for the Computational Social Science course at the University of Trento.
+This project fake news articles using **Natural Language Processing** and **supervised machine learning** techniques. The models were developed and evaluated as part of a university project for the Computational Social Science course at Aalto University.
 
-> 🔍 We compare a transparent TF-IDF classifier with a high-performing Multilayer Perceptron (MLP) trained on OpenAI-generated embeddings.
+> We compare a transparent TF-IDF classifier with a high-performing Multilayer Perceptron (MLP) trained on OpenAI-generated embeddings.
 
 ---
 
-## 🎯 Objective
+## Objective
 
 Develop a system capable of **automatically distinguishing real from fake news** using only the article’s text content, through:
 
@@ -17,7 +17,7 @@ Develop a system capable of **automatically distinguishing real from fake news**
 
 ---
 
-## 🗂 Dataset
+## Dataset
 
 - Source: [Fake and Real News Dataset](https://huggingface.co/datasets/ErfanMoosaviMonazzah/fake-news-detection-dataset-English)
 - ~44,000 labeled articles (`real` vs `fake`)
@@ -25,11 +25,11 @@ Develop a system capable of **automatically distinguishing real from fake news**
 - Preprocessing:
   - Merging `title` and `body`
   - Lowercasing, punctuation removal, stopword removal
-  - Subject label normalization (e.g., "US", "Middle-east" → "News")
+  - Subject label normalization (to make the dataset balanced)
 
 ---
 
-## 🧠 Models
+## Models
 
 ### 1. TF-IDF + Logistic Regression
 - Simple, interpretable baseline
@@ -44,7 +44,7 @@ Develop a system capable of **automatically distinguishing real from fake news**
 
 ---
 
-## 📊 Evaluation
+## Evaluation
 
 | Metric      | TF-IDF | MLP   |
 |-------------|--------|-------|
@@ -56,7 +56,7 @@ Confusion matrices for both models are strongly diagonal, confirming high reliab
 
 ---
 
-## 📈 Analysis
+## Analysis
 
 - **UMAP** visualizations show semantic separation between fake and real articles in the embedding space.
 - **Word clouds** reveal stylistic patterns:
@@ -65,7 +65,7 @@ Confusion matrices for both models are strongly diagonal, confirming high reliab
 
 ---
 
-## 📌 Highlights
+## Highlights
 
 - Comparative analysis of **accuracy vs interpretability**
 - Insight into **topic-wise classification difficulty** (e.g., political articles are harder to distinguish)
@@ -74,14 +74,13 @@ Confusion matrices for both models are strongly diagonal, confirming high reliab
 
 ---
 
-## 📚 Further Reading
+## Further Reading
 
 - [🧾 Final Report PDF](./Fake_news_detection.pdf)
-- [📝 Project Design](./Project%20design.md)
 
 ---
 
-## 👤 Authors
+## Authors
 
 - Pietro De Angeli
 - Vadim Mnev  
@@ -89,10 +88,6 @@ Confusion matrices for both models are strongly diagonal, confirming high reliab
 
 ---
 
-## 🏁 Conclusion
+## Conclusion
 
-This project shows that automatic fake news detection is a tractable task using both shallow and deep NLP approaches. While MLPs offer higher accuracy, TF-IDF models provide transparency and interpretability — essential for high-stakes applications like journalism and public policy.
-
-
-
-
+This project shows that automatic fake news detection is a tractable task using both shallow and deep NLP approaches. While MLPs offer higher accuracy, TF-IDF models provide transparency and interpretability, essential for high-stakes applications like journalism and public policy.
